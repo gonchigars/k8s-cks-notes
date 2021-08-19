@@ -1,6 +1,11 @@
 # k8s-cks-notes
 
 ## ServiceAccounts
+https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account
+
+k exec <pod> -it -- bash
+mount | grep sec
+
 
 - You can disable automounting of a `ServiceAccount` on a `ServiceAccount` or `Pod` resource: `automountServiceAccountToken: false`
 - `mount | grep sec` to show the mount inside the `Pod`.
